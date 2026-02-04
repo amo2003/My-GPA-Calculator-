@@ -1,0 +1,97 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+.gpa-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+.gpa-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.gpa-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* GPA Display */
+.gpa-result {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Subject Row */
+.subject-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Inputs */
+select, input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Input styling */
+select {
+  background: white;
+  color: black;
+}
+
+input {
+  background: white;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #ff7a18;
+  background: linear-gradient(to right, #ff7a18, #ffb347);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
